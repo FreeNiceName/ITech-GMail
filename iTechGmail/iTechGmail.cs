@@ -105,7 +105,7 @@ namespace iTechGmail
 
         private void LoadListMessages()
         {
-            listMessages = GMail.ListMessages(cbIncludeSpamTrash.Checked);
+            listMessages = GMail.ListMessages();
             page = 0;
             nPages = (listMessages.Count + nMessagesOnPage - 1) / nMessagesOnPage;
             pageNumericUpDown.Maximum = nPages;

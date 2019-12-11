@@ -38,11 +38,10 @@ namespace iTechGmail
             });
         }
 
-        public static List<Message> ListMessages(bool includeSpamTrash = false)
+        public static List<Message> ListMessages()
         {
             List<Message> result = new List<Message>();
             UsersResource.MessagesResource.ListRequest request = service.Users.Messages.List("me");
-            request.IncludeSpamTrash = includeSpamTrash;
             request.Q = "in:inbox";
             do
             {
