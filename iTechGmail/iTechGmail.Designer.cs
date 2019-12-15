@@ -38,7 +38,6 @@
             this.btNextPage = new System.Windows.Forms.Button();
             this.btGoToPage = new System.Windows.Forms.Button();
             this.pageNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.cbIncludeSpamTrash = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.messagesDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pageNumericUpDown)).BeginInit();
@@ -80,21 +79,21 @@
             // logInToolStripMenuItem
             // 
             this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
-            this.logInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logInToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.logInToolStripMenuItem.Text = "Log in";
             this.logInToolStripMenuItem.Click += new System.EventHandler(this.logInToolStripMenuItem_Click);
             // 
             // changeUserToolStripMenuItem
             // 
             this.changeUserToolStripMenuItem.Name = "changeUserToolStripMenuItem";
-            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.changeUserToolStripMenuItem.Text = "Change user";
             this.changeUserToolStripMenuItem.Click += new System.EventHandler(this.changeUserToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -145,23 +144,11 @@
             0,
             0});
             // 
-            // cbIncludeSpamTrash
-            // 
-            this.cbIncludeSpamTrash.AutoSize = true;
-            this.cbIncludeSpamTrash.Location = new System.Drawing.Point(12, 494);
-            this.cbIncludeSpamTrash.Name = "cbIncludeSpamTrash";
-            this.cbIncludeSpamTrash.Size = new System.Drawing.Size(136, 17);
-            this.cbIncludeSpamTrash.TabIndex = 7;
-            this.cbIncludeSpamTrash.Text = "Include spam and trash";
-            this.cbIncludeSpamTrash.UseVisualStyleBackColor = true;
-            this.cbIncludeSpamTrash.CheckedChanged += new System.EventHandler(this.cbIncludeSpamTrash_CheckedChanged);
-            // 
             // ITechGmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 526);
-            this.Controls.Add(this.cbIncludeSpamTrash);
             this.Controls.Add(this.pageNumericUpDown);
             this.Controls.Add(this.btGoToPage);
             this.Controls.Add(this.btNextPage);
@@ -193,7 +180,6 @@
         private System.Windows.Forms.Button btNextPage;
         private System.Windows.Forms.Button btGoToPage;
         private System.Windows.Forms.NumericUpDown pageNumericUpDown;
-        private System.Windows.Forms.CheckBox cbIncludeSpamTrash;
     }
 }
 

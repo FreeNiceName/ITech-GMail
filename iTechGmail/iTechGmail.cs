@@ -97,12 +97,6 @@ namespace iTechGmail
             FillInDataGridView();
         }
 
-        private void cbIncludeSpamTrash_CheckedChanged(object sender, EventArgs e)
-        {
-            LoadListMessages();
-            FillInDataGridView();
-        }
-
         private void LoadListMessages()
         {
             listMessages = GMail.ListMessages();
